@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Twitter, Instagram, Facebook, ArrowUp } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowUp } from "lucide-react";
 
 const socials = [
   {
@@ -7,26 +7,15 @@ const socials = [
     href: "mailto:zahid@email.com",
     icon: Mail,
   },
-  // WhatsApp removed as lucide-react does not export it
+  {
+    label: "GitHub",
+    href: "https://github.com/",
+    icon: Github,
+  },
   {
     label: "LinkedIn",
     href: "https://linkedin.com/",
     icon: Linkedin,
-  },
-  {
-    label: "Twitter",
-    href: "https://twitter.com/",
-    icon: Twitter,
-  },
-  {
-    label: "Instagram",
-    href: "https://instagram.com/",
-    icon: Instagram,
-  },
-  {
-    label: "Facebook",
-    href: "https://facebook.com/",
-    icon: Facebook,
   },
 ];
 
@@ -82,14 +71,11 @@ const Footer = () => (
         &copy; 2024 <span className="ml-1" style={{ color: "#12ccc8" }}>Sohaib Hussain Pathan</span>
       </span>
       <div className="flex items-center gap-3 mt-2 md:mt-0 z-10">
-        <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <Facebook size={24} color="#3b82f6" />
+        <a href="mailto:zahid@email.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
+          <Mail size={24} color="#3b82f6" />
         </a>
-        <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-          <Twitter size={24} color="#38bdf8" />
-        </a>
-        <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <Instagram size={24} color="#e1306c" />
+        <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <Github size={24} color="#171515" />
         </a>
         <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
           <Linkedin size={24} color="#0a66c2" />
@@ -109,4 +95,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
