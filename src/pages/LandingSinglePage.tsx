@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import About from "@/pages/about";
@@ -23,10 +22,10 @@ const LandingSinglePage = () => {
       <section id="hero" className="w-full pt-24 pb-10 px-4 flex justify-center items-center min-h-[65vh] bg-transparent">
         <div className="max-w-2xl w-full text-center flex flex-col items-center justify-center">
           <h1 className="font-playfair text-5xl md:text-6xl text-blue-800 font-extrabold mb-7 tracking-tight drop-shadow-sm">
-            Hi, I'm Zahid.
+            Hi, I'm Shaik Zahid Hussain.
           </h1>
           <p className="max-w-2xl text-lg text-blue-700 mb-7 font-semibold">
-            A modern developer. I turn ideas into reality.
+            a web developer | Python | MySQL | React.js
           </p>
           <a
             href="#about"
@@ -54,4 +53,3 @@ const LandingSinglePage = () => {
 };
 
 export default LandingSinglePage;
-
