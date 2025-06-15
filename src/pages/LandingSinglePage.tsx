@@ -38,7 +38,7 @@ const LandingSinglePage = () => {
               mb-2 transition duration-200
               "
           >
-            View My Projects
+            Explore
           </a>
         </div>
       </section>
