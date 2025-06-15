@@ -6,7 +6,7 @@ import Projects from "@/pages/projects";
 import Certificates from "@/pages/certificates";
 import Resume from "@/pages/resume";
 import Contact from "@/pages/contact";
-// Removed Footer import
+import { useWordReveal } from "@/hooks/useWordReveal";
 
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id);
@@ -16,13 +16,15 @@ const scrollToSection = (id: string) => {
 };
 
 const LandingSinglePage = () => {
+  const animatedText = useWordReveal("Hi, I'm Shaik Zahid Hussain.");
+
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-black dark:via-slate-900 dark:to-blue-900 pb-0">
       <Navbar onSectionLink={scrollToSection} />
       <section id="hero" className="w-full pt-24 pb-10 px-4 flex justify-center items-center min-h-[65vh] bg-transparent">
         <div className="max-w-2xl w-full text-center flex flex-col items-center justify-center">
-          <h1 className="font-playfair text-5xl md:text-6xl text-blue-800 font-extrabold mb-7 tracking-tight drop-shadow-sm">
-            Hi, I'm Shaik Zahid Hussain.
+          <h1 className="font-playfair text-5xl md:text-6xl text-blue-800 font-extrabold mb-7 tracking-tight drop-shadow-sm min-h-[3.5rem]">
+            {animatedText}
           </h1>
           <p className="max-w-2xl text-lg text-blue-700 mb-7 font-semibold">
             a web developer | Python | MySQL | React.js
