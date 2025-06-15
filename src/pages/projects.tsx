@@ -35,8 +35,8 @@ const projects = [
       "shadcn/ui",
       "Lucide React"
     ],
-    github: "", // Add portfolio repo if you wish
-    demo: ""
+    github: "https://github.com/zahidshaikzahidshaik/Personal-Portfolio.git",
+    demo: "https://shaik-zahid-hussain-gamma.vercel.app/"
   }
 ];
 
