@@ -16,21 +16,21 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="w-full bg-white/70 backdrop-blur border-b border-border fixed top-0 left-0 z-20">
-      <div className="container flex items-center justify-between mx-auto py-3 px-4">
-        <span className="font-playfair font-bold text-xl text-primary">
+    <nav className="w-full bg-white/80 dark:bg-black/40 backdrop-blur border-b border-blue-300/30 dark:border-blue-700/40 fixed top-0 left-0 z-30 shadow-md">
+      <div className="container flex items-center justify-between mx-auto py-4 px-6">
+        <span className="font-playfair font-bold text-2xl text-blue-800 tracking-tight">
           Zahid<span className="text-blue-600">.</span>
         </span>
-        <ul className="flex items-center gap-6 font-medium text-base">
+        <ul className="flex items-center gap-7 font-semibold text-base">
           {navItems.map((item) => (
             <li key={item.path}>
               <Link
                 to={item.path}
                 className={cn(
-                  "transition-colors hover:text-blue-600 px-2 py-1 rounded",
+                  "transition-colors px-3 py-1 rounded-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:bg-blue-900/40",
                   location.pathname === item.path
-                    ? "text-blue-600 font-semibold"
-                    : "text-foreground"
+                    ? "text-white bg-blue-700 shadow font-bold"
+                    : "text-blue-800 dark:text-blue-100"
                 )}
               >
                 {item.label}
@@ -44,4 +44,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
