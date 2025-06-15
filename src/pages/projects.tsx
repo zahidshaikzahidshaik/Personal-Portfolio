@@ -4,6 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 // Add the new project with all required details
 const projects = [
   {
+    title: "Ecommerce Sales Analysis using Apache Spark",
+    description: "An analysis of ecommerce sales data using Apache Spark to gain insights into sales trends and patterns. Includes data cleaning, customer behavior analysis, visualization of key metrics, and seasonal trend analysis.",
+    tech: ["Apache Spark", "PySpark", "Data Analysis", "Python"],
+    github: "https://github.com/zahidshaikzahidshaik/Ecommerce-Sales-Analysis.git",
+    demo: ""
+  },
+  {
     title: "Skill Compass Resume",
     description: "A modern, AI-powered resume analyzer designed to help job seekers enhance their resumes and gain insights into their skills. Features resume upload, AI-driven analysis, skill highlighting, improvement suggestions, and tailored recommendations.",
     tech: ["React.js", "TypeScript", "Vite", "Tailwind CSS"],
