@@ -24,20 +24,9 @@ const projects = [
     demo: "https://ai-resume-analysis.netlify.app/"
   },
   {
-    title: "Project One",
-    description: "A web app built with React and Python API that showcases dynamic data visualization.",
-  },
-  {
     title: "Portfolio Site",
     description: "This very portfolio—responsive, themed, and fast!",
-  },
-  {
-    title: "Lovable AI Portfolio Editor",
-    description: "An interactive editor web app that helps users build stunning portfolios with real-time AI-powered editing. Supports live preview, drag-and-drop sections, and beautiful dark/light themes.",
-    tech: ["React.js", "TypeScript", "Tailwind CSS", "AI"],
-    github: "",
-    demo: ""
-  },
+  }
 ];
 
 const gradientArr = [
