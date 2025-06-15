@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 // Add the new project with all required details
@@ -27,10 +26,6 @@ const projects = [
   {
     title: "Project One",
     description: "A web app built with React and Python API that showcases dynamic data visualization.",
-  },
-  {
-    title: "Project Two",
-    description: "An automation script leveraging Spark for fast ETL workflows.",
   },
   {
     title: "Portfolio Site",
