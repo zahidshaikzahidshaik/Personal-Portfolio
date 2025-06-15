@@ -17,23 +17,31 @@ const experiences = [
 ];
 
 const Experience = () => (
-  <main className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-16 md:py-28 animate-fade-in">
-    <h1 className="font-playfair text-3xl md:text-5xl text-blue-800 font-bold text-center mb-8">Experience</h1>
-    <p className="max-w-2xl text-muted-foreground text-center mb-8 text-base md:text-lg">
-      Timeline of my work &amp; key roles.
+  <main className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-20 md:py-32 animate-fade-in bg-gradient-to-br from-blue-50 via-white to-blue-200 dark:from-black dark:via-slate-900 dark:to-blue-900">
+    <h1 className="font-playfair text-4xl md:text-5xl font-extrabold text-blue-800 mb-5 tracking-tight text-center">Experience</h1>
+    <p className="text-muted-foreground text-center mb-10 text-base md:text-lg max-w-2xl">
+      A timeline of my work and key roles.
     </p>
-    <div className="space-y-8 w-full max-w-xl mx-auto">
+    <div className="w-full max-w-2xl flex flex-col gap-6 relative">
+      {/* Vertical line for timeline effect */}
+      <div className="absolute left-4 top-6 bottom-6 w-1 bg-blue-200 dark:bg-blue-800/50 rounded-lg z-0 hidden md:block" />
       {experiences.map((exp, i) => (
-        <Card key={i} className="border-l-4 border-blue-700 bg-white/90 dark:bg-black/40 rounded-2xl shadow-lg px-1">
+        <Card
+          key={i}
+          className={`relative z-10 rounded-2xl shadow-lg border-none bg-white/95 dark:bg-black/40
+            flex md:ml-6 transition-transform hover:scale-[1.025] hover:shadow-2xl hover:-translate-y-1 group animate-fade-in`}
+        >
+          {/* Dot indicator */}
+          <span className="absolute -left-6 top-8 w-5 h-5 bg-blue-700 border-4 border-white dark:border-black rounded-full shadow-md hidden md:block group-hover:scale-110 transition" />
           <CardHeader className="pb-2">
-            <div className="flex flex-col gap-1 md:flex-row md:items-end md:justify-between">
-              <CardTitle className="font-playfair text-lg text-blue-800">{exp.role}</CardTitle>
-              <span className="text-xs text-blue-600 font-bold">{exp.period}</span>
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-1">
+              <CardTitle className="font-playfair text-xl text-blue-800">{exp.role}</CardTitle>
+              <span className="text-xs bg-blue-100 text-blue-700 font-bold rounded px-2 py-1">{exp.period}</span>
             </div>
-            <span className="block text-blue-800 font-medium text-sm">{exp.company}</span>
+            <span className="block text-blue-700 font-medium text-sm">{exp.company}</span>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-sm md:text-base">{exp.desc}</CardDescription>
+            <CardDescription className="text-md md:text-base text-blue-900/80 dark:text-blue-100">{exp.desc}</CardDescription>
           </CardContent>
         </Card>
       ))}
