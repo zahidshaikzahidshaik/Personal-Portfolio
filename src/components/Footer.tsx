@@ -66,11 +66,11 @@ const renderIcon = (social: typeof socials[0]) => {
 const Footer = () => (
   <footer className="w-full mt-24">
     {/* Social Links */}
-    <div className="bg-gray-50 dark:bg-slate-900 pt-12 pb-6 text-center">
+    <div className="bg-gray-50 dark:bg-slate-900 pt-12 pb-5 text-center">
       <h2 className="text-2xl font-bold mb-6" style={{ color: "#6A7324", fontFamily: "'Playfair Display', serif" }}>
         Connect with me
       </h2>
-      <div className="flex flex-wrap justify-center gap-5 mt-2 mb-4">
+      <div className="flex flex-wrap justify-center gap-5 mt-2 mb-3">
         {socials.map((social) => (
           <a
             key={social.label}
@@ -83,6 +83,39 @@ const Footer = () => (
             {renderIcon(social)}
           </a>
         ))}
+      </div>
+      {/* Textual Social Links */}
+      <div className="flex flex-col items-center justify-center gap-1 mt-1 text-base md:text-sm text-blue-900 dark:text-white">
+        <div>
+          <span className="font-semibold">GitHub:</span>{" "}
+          <a href="https://github.com/zahidshaikzahidshaik" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            https://github.com/zahidshaikzahidshaik
+          </a>
+        </div>
+        <div>
+          <span className="font-semibold">Facebook:</span>{" "}
+          <a href="https://www.facebook.com/zahid.shaik.3114?rdid=ZMFPao1rjPQtc8mM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1L7vj1u2Md%2F#" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            facebook.com/zahid.shaik.3114
+          </a>
+        </div>
+        <div>
+          <span className="font-semibold">Twitter:</span>{" "}
+          <a href="https://x.com/ZahidSh96544623?t=EAE4jJE0cx12b_T2SG3LSg&s=08" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            x.com/ZahidSh96544623
+          </a>
+        </div>
+        <div>
+          <span className="font-semibold">Instagram:</span>{" "}
+          <a href="https://www.instagram.com/zahid_shaik_56/?igsh=N2hhOHQ0dHE2YnFi#" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            instagram.com/zahid_shaik_56
+          </a>
+        </div>
+        <div>
+          <span className="font-semibold">LinkedIn:</span>{" "}
+          <a href="https://www.linkedin.com/in/shaikzahidhussain" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/shaikzahidhussain
+          </a>
+        </div>
       </div>
     </div>
     {/* Footer Bar */}
