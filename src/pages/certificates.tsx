@@ -1,23 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link as LinkIcon } from "lucide-react";
 
 const certificates = [
-  { 
-    provider: "Udemy", 
-    name: "React - The Complete Guide (incl Hooks, Redux)", 
-    color: "bg-orange-200 text-orange-800" 
-  },
-  { 
-    provider: "AICTE", 
-    name: "Python for Data Science", 
-    color: "bg-green-200 text-green-800" 
-  },
-  { 
-    provider: "Swayam", 
-    name: "Big Data Analytics with Spark", 
-    color: "bg-blue-200 text-blue-800" 
-  },
   {
     provider: "Congnifyz",
     name: "Internship Certificate",
@@ -91,4 +75,3 @@ const Certificates = () => (
 );
 
 export default Certificates;
-
