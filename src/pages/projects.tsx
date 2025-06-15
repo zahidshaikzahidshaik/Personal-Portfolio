@@ -4,6 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 // Add the new project with all required details
 const projects = [
   {
+    title: "Task Management App using React.js",
+    description: "A task management application built using React.js that allows users to create, update, and delete tasks. Features task prioritization, due date reminders, progress tracking, and real-time notifications.",
+    tech: ["React.js", "JavaScript", "CSS", "Local Storage"],
+    github: "", // Add link if available
+    demo: ""
+  },
+  {
     title: "Ecommerce Sales Analysis using Apache Spark",
     description: "An analysis of ecommerce sales data using Apache Spark to gain insights into sales trends and patterns. Includes data cleaning, customer behavior analysis, visualization of key metrics, and seasonal trend analysis.",
     tech: ["Apache Spark", "PySpark", "Data Analysis", "Python"],
