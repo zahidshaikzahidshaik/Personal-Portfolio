@@ -3,9 +3,22 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const education = [
   {
-    institution: "Your University Name",
-    degree: "Bachelor of Technology in Computer Science",
-    period: "2019 - 2023",
+    institution: "Jawaharlal Nehru Technological University, Anantapur",
+    degree: "Bachelor of Technology in Computer Systems Engineering",
+    period: "2021 - 2025",
+    location: "",
+  },
+  {
+    institution: "Penchal Reddy High School",
+    degree: "Intermediate",
+    period: "2020 - 2021",
+    location: "Kadapa, Rayachoty",
+  },
+  {
+    institution: "Sri Raju High School",
+    degree: "10th Class",
+    period: "2018 - 2019",
+    location: "Kadapa, Rayachoty",
   },
 ];
 
@@ -47,9 +60,10 @@ const About = () => (
         <div>
           <h2 className="font-playfair text-xl text-blue-800 mb-2">Education</h2>
           {education.map((edu, i) => (
-            <div key={i} className="mb-1">
+            <div key={i} className="mb-3">
               <p className="font-semibold text-blue-700">{edu.degree}</p>
               <p className="text-blue-800">{edu.institution}</p>
+              {edu.location && <p className="text-blue-700">{edu.location}</p>}
               <p className="text-gray-500 text-sm">{edu.period}</p>
             </div>
           ))}
@@ -60,3 +74,4 @@ const About = () => (
 );
 
 export default About;
+
