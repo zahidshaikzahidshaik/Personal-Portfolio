@@ -1,18 +1,31 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
+// New experiences array based on user input
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "Tech Solutions",
-    period: "2023 - Present",
-    desc: "Building performant user interfaces with React and Tailwind; collaborating with designers and backend engineers.",
+    role: "FrontEnd Developer Intern",
+    company: "Renu Sharma Foundation",
+    location: "San Francisco, CA",
+    period: "Feb 2025 - June 2025",
+    points: [
+      "Led a team of 5 developers in building scalable web applications using React and Node.js",
+      "Implemented CI/CD pipelines that reduced deployment time by 40%",
+      "Architected microservices infrastructure that improved system reliability by 30%",
+      "Mentored junior developers and conducted code reviews to maintain code quality"
+    ]
   },
   {
-    role: "Python Developer",
-    company: "DataOps Co.",
-    period: "2021 - 2023",
-    desc: "Developed scalable data processing pipelines using Spark and Python.",
+    role: "Python Developer Intern",
+    company: "M",
+    location: "Bangalore, India",
+    period: "Summer 2019",
+    points: [
+      "Developed RESTful APIs using Express.js and MongoDB",
+      "Created responsive UI components with React and Material UI",
+      "Participated in Agile development processes including daily stand-ups and sprint planning",
+      "Collaborated with the QA team to identify and fix bugs"
+    ]
   },
 ];
 
@@ -38,10 +51,14 @@ const Experience = () => (
               <CardTitle className="font-playfair text-xl text-blue-800">{exp.role}</CardTitle>
               <span className="text-xs bg-blue-100 text-blue-700 font-bold rounded px-2 py-1">{exp.period}</span>
             </div>
-            <span className="block text-blue-700 font-medium text-sm">{exp.company}</span>
+            <span className="block text-blue-700 font-medium text-sm">{exp.company}, {exp.location}</span>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-md md:text-base text-blue-900/80 dark:text-blue-100">{exp.desc}</CardDescription>
+            <ul className="list-disc list-inside text-blue-900/80 dark:text-blue-100 text-md md:text-base space-y-1 pl-1">
+              {exp.points.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
           </CardContent>
         </Card>
       ))}
