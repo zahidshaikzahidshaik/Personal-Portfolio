@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Twitter, Instagram, Facebook, Whatsapp, ArrowUp } from "lucide-react";
+import { Mail, Linkedin, Twitter, Instagram, Facebook, ArrowUp } from "lucide-react";
 
 const socials = [
   {
@@ -7,11 +7,7 @@ const socials = [
     href: "mailto:zahid@email.com",
     icon: Mail,
   },
-  {
-    label: "WhatsApp",
-    href: "https://wa.me/",
-    icon: Whatsapp,
-  },
+  // WhatsApp removed as lucide-react does not export it
   {
     label: "LinkedIn",
     href: "https://linkedin.com/",
@@ -113,3 +109,4 @@ const Footer = () => (
 );
 
 export default Footer;
+
