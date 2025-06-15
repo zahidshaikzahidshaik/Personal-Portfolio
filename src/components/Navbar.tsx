@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Projects", path: "/projects" },
   { label: "Experience", path: "/experience" },
+  { label: "Projects", path: "/projects" },
+  { label: "Resume", path: "/resume" },
   { label: "Certificates", path: "/certificates" },
   { label: "Contact", path: "/contact" },
 ];
@@ -43,3 +44,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
