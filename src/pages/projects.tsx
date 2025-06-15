@@ -17,7 +17,7 @@ const projects = [
     demo: ""
   },
   {
-    title: "Skill Compass Resume",
+    title: "Ai- Resume-Analyzer",
     description: "A modern, AI-powered resume analyzer designed to help job seekers enhance their resumes and gain insights into their skills. Features resume upload, AI-driven analysis, skill highlighting, improvement suggestions, and tailored recommendations.",
     tech: ["React.js", "TypeScript", "Vite", "Tailwind CSS"],
     github: "https://github.com/zahidshaikzahidshaik/skill-compass-resume.git",
