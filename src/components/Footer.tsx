@@ -1,23 +1,6 @@
 
-import { Mail, Linkedin, Github, ArrowUp } from "lucide-react";
-
-const socials = [
-  {
-    label: "Email",
-    href: "mailto:zahid@email.com",
-    icon: Mail,
-  },
-  {
-    label: "GitHub",
-    href: "https://github.com/",
-    icon: Github,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com/",
-    icon: Linkedin,
-  },
-];
+import SocialLinks from "./SocialLinks";
+import { ArrowUp } from "lucide-react";
 
 const Footer = () => (
   <footer className="w-full mt-24">
@@ -26,21 +9,7 @@ const Footer = () => (
       <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "#6A7324", fontFamily: "'Playfair Display', serif" }}>
         Contact Me
       </h2>
-      <div className="flex flex-wrap justify-center gap-5 mb-3">
-        {socials.map(({ label, href, icon: Icon }) => (
-          <a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={label}
-            className="rounded-full bg-sky-300 hover:bg-sky-400 transition-colors duration-200 p-4 md:p-4 shadow-lg"
-            style={{ display: "inline-flex" }}
-          >
-            <Icon size={32} color="white" />
-          </a>
-        ))}
-      </div>
+      <SocialLinks />
     </div>
     {/* FOOTER BAR */}
     <div
@@ -70,17 +39,6 @@ const Footer = () => (
       <span className="z-10 mt-2 md:mt-0 text-white font-semibold">
         &copy; 2024 <span className="ml-1" style={{ color: "#12ccc8" }}>Sohaib Hussain Pathan</span>
       </span>
-      <div className="flex items-center gap-3 mt-2 md:mt-0 z-10">
-        <a href="mailto:zahid@email.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-          <Mail size={24} color="#3b82f6" />
-        </a>
-        <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-          <Github size={24} color="#171515" />
-        </a>
-        <a href="https://linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <Linkedin size={24} color="#0a66c2" />
-        </a>
-      </div>
       {/* Back To Top Button */}
       <button
         aria-label="Back to top"
