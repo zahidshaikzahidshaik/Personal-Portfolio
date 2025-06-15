@@ -25,7 +25,18 @@ const projects = [
   },
   {
     title: "Portfolio Site",
-    description: "This very portfolio—responsive, themed, and fast!",
+    description:
+      "This portfolio website is built with React.js, TypeScript, Vite, and Tailwind CSS, providing a fast, modern, and fully responsive platform to showcase my projects and experience. Features include:\n• Dark & light modes\n• Animations\n• Modular code with shadcn/ui components\n• Easy navigation & real-time updates\n\nTech stack: React.js, TypeScript, Vite, Tailwind CSS, shadcn/ui, Lucide React Icons.",
+    tech: [
+      "React.js",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Lucide React"
+    ],
+    github: "", // Add portfolio repo if you wish
+    demo: ""
   }
 ];
 
