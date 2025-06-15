@@ -71,7 +71,8 @@ const Certificates = () => (
                 href={c.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="font-playfair text-blue-800 underline underline-offset-2 hover:text-blue-500 text-base"
+                className="font-playfair text-blue-800 text-base cursor-pointer focus:outline-none"
+                style={{ textDecoration: "none" }}
               >
                 {c.name}
               </a>
