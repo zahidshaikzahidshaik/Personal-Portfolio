@@ -1,5 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link as LinkIcon } from "lucide-react";
 
 const certificates = [
   { 
@@ -17,7 +18,6 @@ const certificates = [
     name: "Big Data Analytics with Spark", 
     color: "bg-blue-200 text-blue-800" 
   },
-  // New certificates with links
   {
     provider: "Congnifyz",
     name: "Internship Certificate",
@@ -66,19 +66,22 @@ const Certificates = () => (
         <Card key={i} className="rounded-2xl bg-white/95 border-none dark:bg-black/40 shadow-xl transition-transform hover:scale-105 animate-fade-in p-1">
           <CardHeader className="flex-row items-center gap-2 py-3 px-5">
             <span className={`font-bold text-xs rounded-lg px-3 py-1 mr-2 ${c.color}`}>{c.provider}</span>
-            {c.link ? (
-              <a 
-                href={c.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="font-playfair text-blue-800 text-base cursor-pointer focus:outline-none"
-                style={{ textDecoration: "none" }}
-              >
-                {c.name}
-              </a>
-            ) : (
-              <CardTitle className="font-playfair text-blue-800 text-base">{c.name}</CardTitle>
-            )}
+            <div className="flex items-center gap-1">
+              <span className="font-playfair text-blue-800 text-base">{c.name}</span>
+              {c.link && (
+                <a
+                  href={c.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-1 text-blue-400 hover:text-blue-700 transition-colors"
+                  aria-label="View Certificate"
+                  tabIndex={0}
+                  style={{ display: "inline-flex", verticalAlign: "middle" }}
+                >
+                  <LinkIcon size={18} strokeWidth={2} />
+                </a>
+              )}
+            </div>
           </CardHeader>
           <CardContent />
         </Card>
@@ -88,3 +91,4 @@ const Certificates = () => (
 );
 
 export default Certificates;
+
