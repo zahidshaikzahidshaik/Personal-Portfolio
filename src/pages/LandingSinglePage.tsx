@@ -29,7 +29,7 @@ const LandingSinglePage = () => {
             A modern developer. I turn ideas into reality.
           </p>
           <a
-            href="#projects"
+            href="#about"
             className="
               bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-900 hover:to-blue-700
               text-white font-bold px-8 py-3 rounded-xl shadow-lg
