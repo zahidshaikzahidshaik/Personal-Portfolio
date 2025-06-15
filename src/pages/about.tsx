@@ -30,8 +30,8 @@ const About = () => (
 			<div className="flex-shrink-0 w-full md:w-1/3 flex flex-col items-center p-8 md:pt-14 md:pl-12 md:pr-4 z-10">
 				<div className="relative -mt-16 md:mt-0 md:-ml-8 h-40 w-40 md:h-48 md:w-48 rounded-full shadow-xl bg-gradient-to-t from-blue-300/50 to-blue-700/70 border-4 border-white overflow-hidden">
 					<img
-						src="public/shaik zahid hussain.jpg"
-						alt="Profile"
+						src="/shaik_zahid_hussain.jpg"
+						alt="Shaik Zahid Hussain"
 						className="w-full h-full object-cover rounded-full"
 					/>
 				</div>
