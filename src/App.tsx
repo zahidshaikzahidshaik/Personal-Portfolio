@@ -1,9 +1,11 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingSinglePage from "./pages/LandingSinglePage";
+import Footer from "@/components/Footer";
 // import NotFound from "./pages/NotFound";
 // import Navbar from "@/components/Navbar";
 // import About from "@/pages/about";
@@ -21,12 +23,18 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/*" element={<LandingSinglePage />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col">
+          <div className="flex-1 flex flex-col">
+            <Routes>
+              <Route path="/*" element={<LandingSinglePage />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
 
 export default App;
+
