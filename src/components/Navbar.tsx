@@ -1,5 +1,5 @@
-
 import { cn } from "@/lib/utils";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Home", anchor: "hero" },
@@ -58,6 +58,9 @@ const Navbar = ({ onSectionLink }: NavbarProps) => {
             );
           })}
         </ul>
+        <div className="flex items-center">
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   );
