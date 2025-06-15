@@ -7,6 +7,7 @@ import Projects from "@/pages/projects";
 import Certificates from "@/pages/certificates";
 import Resume from "@/pages/resume";
 import Contact from "@/pages/contact";
+import Footer from "@/components/Footer";
 
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id);
@@ -47,6 +48,7 @@ const LandingSinglePage = () => {
       <section id="certificates" className="scroll-mt-20 py-12"><Certificates /></section>
       <section id="resume" className="scroll-mt-20 py-12"><Resume /></section>
       <section id="contact" className="scroll-mt-20 py-12"><Contact /></section>
+      <Footer />
     </div>
   );
 };
