@@ -1,9 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-
-const RESUME_URL = "public/zahid_hussain_cv.pdf";
 
 const Resume = () => (
   <main className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-20 md:py-32 animate-fade-in bg-gradient-to-br from-blue-50 via-white to-blue-200 dark:from-black dark:via-slate-900 dark:to-blue-900">
@@ -16,7 +13,7 @@ const Resume = () => (
           Download or view my latest resume below.
         </p>
         <Button asChild size="lg" className="bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-900 hover:to-blue-700 text-white font-bold text-base px-7 py-3 rounded-xl shadow-lg animate-fade-in">
-          <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+          <a href="/zahid_hussain_cv.pdf" target="_blank" rel="noopener noreferrer">
             View Resume
             <ExternalLink className="ml-2" />
           </a>
